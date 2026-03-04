@@ -1,22 +1,22 @@
-# 🛠️ DevTools CLI
+# DevTools CLI
 
 A feature-rich command-line interface tool built with Node.js and TypeScript, featuring multiple API integrations and Object-Oriented Programming principles.
 
-## ✨ Features
+## Features
 
-- 🎯 10+ custom commands
-- 🌐 Multiple API integrations (GitHub, Weather, Quotes, Jokes, Advice, Crypto)
-- 🎨 Colored CLI output using Chalk
-- 🚀 Built with TypeScript and OOP principles
-- ⚡ Fast and lightweight
-- 📦 Easy to install and use
+- 10+ custom commands
+- Multiple API integrations (GitHub, Weather, Quotes, Jokes, Advice, Crypto)
+- Colored CLI output using Chalk
+- Built with TypeScript and OOP principles
+- Fast and lightweight
+- Easy to install and use
 
-## 📥 Installation
+## Installation
 
 ### Step 1: Clone Repository
 ```bash
-git clone <your-repo-url>
-cd devtools-cli
+git clone https://github.com/Mishra-coder/SeSD_Workshop_2.git
+cd SeSD_Workshop_2
 ```
 
 ### Step 2: Install Dependencies
@@ -34,70 +34,70 @@ npm run build
 npm link
 ```
 
-Now you can use `devtools` command from anywhere!
+Now you can use devtools command from anywhere!
 
-## 📋 Available Commands
+## Available Commands
 
-### 1. 👋 Greet Command
+### 1. Greet Command
 Greet a user by name with optional formal mode.
 
-**Usage:**
+Usage:
 ```bash
 devtools greet John
 devtools greet John --formal
 ```
 
-**Options:**
-- `-f, --formal` - Use formal greeting style
+Options:
+- -f, --formal - Use formal greeting style
 
-### 2. 📄 File Info Command
+### 2. File Info Command
 Get detailed information about a file.
 
-**Usage:**
+Usage:
 ```bash
 devtools fileinfo package.json
 devtools fileinfo src/index.ts
 ```
 
-**Shows:** Name, path, size, extension, created/modified dates
+Shows: Name, path, size, extension, created/modified dates
 
-### 3. 🐙 GitHub Command
+### 3. GitHub Command
 Fetch GitHub user information.
 
-**Usage:**
+Usage:
 ```bash
 devtools github octocat
 devtools github torvalds
 ```
 
-**Shows:** Username, name, bio, repos, followers, following, profile URL
+Shows: Username, name, bio, repos, followers, following, profile URL
 
-### 4. 🌤️ Weather Command
+### 4. Weather Command
 Get current weather for any city.
 
-**Usage:**
+Usage:
 ```bash
 devtools weather London
 devtools weather "New York"
 devtools weather Tokyo
 ```
 
-**Shows:** Temperature (°C/°F), condition, humidity, wind speed
+Shows: Temperature, condition, humidity, wind speed
 
-### 5. 💭 Quote Command
+### 5. Quote Command
 Get a random inspirational quote.
 
-**Usage:**
+Usage:
 ```bash
 devtools quote
 ```
 
-**Shows:** Quote text and author name
+Shows: Quote text and author name
 
-### 6. 🔢 Math Command
+### 6. Math Command
 Perform basic mathematical operations.
 
-**Usage:**
+Usage:
 ```bash
 devtools math add 10 20
 devtools math sub 50 30
@@ -105,72 +105,72 @@ devtools math mul 5 6
 devtools math div 100 4
 ```
 
-**Operations:** add, sub, mul, div
+Operations: add, sub, mul, div
 
-### 7. 🕐 Time Command
+### 7. Time Command
 Display current date and time.
 
-**Usage:**
+Usage:
 ```bash
 devtools time
 devtools time --utc
 ```
 
-**Options:**
-- `-u, --utc` - Show UTC time instead of local time
+Options:
+- -u, --utc - Show UTC time instead of local time
 
-### 8. 😂 Joke Command
+### 8. Joke Command
 Get a random programming joke.
 
-**Usage:**
+Usage:
 ```bash
 devtools joke
 ```
 
-**Shows:** Programming-related jokes (safe mode enabled)
+Shows: Programming-related jokes (safe mode enabled)
 
-### 9. 💡 Advice Command
+### 9. Advice Command
 Get random life advice.
 
-**Usage:**
+Usage:
 ```bash
 devtools advice
 ```
 
-**Shows:** Random helpful advice
+Shows: Random helpful advice
 
-### 10. 💰 Crypto Command
+### 10. Crypto Command
 Get cryptocurrency prices.
 
-**Usage:**
+Usage:
 ```bash
 devtools crypto bitcoin
 devtools crypto ethereum
 devtools crypto dogecoin
 ```
 
-**Shows:** Current USD price and 24h change percentage
+Shows: Current USD price and 24h change percentage
 
-### ➕ Additional Commands
+### Additional Commands
 
-**Version:**
+Version:
 ```bash
 devtools --version
 ```
 
-**Help:**
+Help:
 ```bash
 devtools --help
 devtools <command> --help
 ```
 
-**Examples:**
+Examples:
 ```bash
 devtools greet --help
 devtools math --help
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 devtools-cli/
@@ -206,14 +206,14 @@ devtools-cli/
 └── README.md
 ```
 
-## 🎓 OOP Concepts Used
+## OOP Concepts Used
 
 ### Classes
 All commands and services are implemented as classes for better code organization.
 
 ### Inheritance
-- Commands extend `BaseCommand`
-- Services extend `ApiService`
+- Commands extend BaseCommand
+- Services extend ApiService
 
 ### Encapsulation
 Private methods and properties keep internal logic hidden.
@@ -224,7 +224,7 @@ Abstract base classes define common interfaces for all commands and services.
 ### Polymorphism
 Different command implementations share the same interface.
 
-## 🌐 API Integrations
+## API Integrations
 
 | API | Purpose | Endpoint |
 |-----|---------|----------|
@@ -235,7 +235,7 @@ Different command implementations share the same interface.
 | Advice Slip API | Random advice | api.adviceslip.com |
 | CoinGecko API | Cryptocurrency prices | api.coingecko.com |
 
-## 🔧 Development
+## Development
 
 ### Run in Development Mode
 ```bash
@@ -259,7 +259,7 @@ node dist/index.js weather London
 node dist/index.js github octocat
 ```
 
-## 💻 Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |------------|---------|
@@ -269,31 +269,24 @@ node dist/index.js github octocat
 | Axios | HTTP client for API calls |
 | Chalk | Terminal styling and colors |
 
-## 🚀 Example Usage
+## Example Usage
 
 ### Quick Start Examples
 
 ```bash
 devtools greet John
-# Output: Hey John! 👋 Welcome to DevTools CLI!
 
 devtools github torvalds
-# Shows: Username, repos, followers, etc.
 
 devtools weather Tokyo
-# Shows: Temperature, humidity, wind speed
 
 devtools quote
-# Shows: Random inspirational quote
 
 devtools math add 42 58
-# Output: Result: 100
 
 devtools crypto bitcoin
-# Shows: Current BTC price in USD
 
 devtools joke
-# Shows: Random programming joke
 ```
 
 ### Advanced Examples
@@ -305,16 +298,16 @@ devtools math div 100 4
 devtools weather "New York"
 ```
 
-## 📄 License
+## License
 
 MIT
 
-## 👤 Author
+## Author
 
-[Your Name]
+Devendra Mishra
 
-## 📤 Submission
+## Submission
 
-- **Workshop**: SESD Workshop 2
-- **Deadline**: 04/03/2026
-- **Repository**: [Your GitHub Repo URL]
+- Workshop: SESD Workshop 2
+- Deadline: 04/03/2026
+- Repository: https://github.com/Mishra-coder/SeSD_Workshop_2
